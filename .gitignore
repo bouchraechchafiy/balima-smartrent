@@ -1,0 +1,19 @@
+# Python Backend
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+balima.db
+*.sqlite3
+
+# Node Frontend
+node_modules/
+dist/
+build/
+.DS_Store
+
+# Environment variables (Safety)
+.env
+.env.local

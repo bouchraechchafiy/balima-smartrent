@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* THE ROYAL AURORA BACKGROUND */
+    background-image:
+            radial-gradient(at 0% 0%, rgba(197, 160, 89, 0.08) 0px, transparent 50%),
+            radial-gradient(at 100% 0%, rgba(11, 17, 32, 0.05) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059; /* Balima Gold */
+}
+
+/* LUXURY SELECTION */
+::selection {
+  background: #C5A059;
+  color: white;
+}
+
+/* GOLD FOCUS RINGS */
+input:focus, textarea:focus {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.15);
+  border-color: #C5A059;
+}
+
+/* ANIMATIONS */
+@keyframes shimmer {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
